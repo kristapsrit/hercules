@@ -18,12 +18,12 @@ if (!function_exists('hercules_setup')) :
          * Make theme available for translation.
          * Translations can be placed in the /languages/ directory.
          */
-        load_theme_textdomain('kentaurus', get_template_directory() . '/languages');
+        load_theme_textdomain('hercules', get_template_directory() . '/languages');
 
         /**
          * Add theme support for various features.
          */
-        add_theme_support('post-thumbnails');
+        add_theme_support('post-thumbnails', ['post']);
         add_theme_support('custom-logo');
         add_theme_support('title-tag');
         add_theme_support('post-formats', array('quote', 'image', 'video'));
@@ -44,15 +44,15 @@ if (!function_exists('hercules_setup')) :
         ));
 
         register_sidebar(array(
-            'name'          => __('Sidebar - 1', 'kentaurus'),
+            'name'          => __('Sidebar - 1', 'hercules'),
             'id'            => 'sidebar-1',
-            'description'   => __('Custom sidebar', 'kentaurus'),
+            'description'   => __('Custom sidebar', 'hercules'),
         ));
 
         register_sidebar(array(
-            'name'          => __('Sidebar - 2', 'kentaurus'),
+            'name'          => __('Sidebar - 2', 'hercules'),
             'id'            => 'sidebar-2',
-            'description'   => __('Custom sidebar', 'kentaurus'),
+            'description'   => __('Custom sidebar', 'hercules'),
         ));
     }
 endif;

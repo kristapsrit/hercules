@@ -12,3 +12,5 @@ if (!defined('ABSPATH')) {
 
 ?>
 
+<?php get_header(); ?>
+<?php get_footer(); ?>

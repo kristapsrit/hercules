@@ -40,13 +40,25 @@ if (function_exists('acf_add_options_page')) {
 		'menu_title'	=> 'Theme Settings',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
-		'icon_url'      => 'dashicons-superhero-alt',
+		'icon_url'      => 'dashicons-unlock',
 		'redirect'		=> false
 	));
 
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Casinos Settings',
-		'menu_title'	=> 'Casinos Settings',
+		'page_title' 	=> 'Header Settings',
+		'menu_title'	=> 'Header Settings',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Footer Settings',
+		'menu_title'	=> 'Footer Settings',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Casino Settings',
+		'menu_title'	=> 'Casino Settings',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 }

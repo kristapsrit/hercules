@@ -13,10 +13,10 @@
 function hercules_casinos_init()
 {
     $labels = array(
-        'name'                  => _x('Casinos', 'Post type general name', 'kentaurus'),
-        'singular_name'         => _x('Casino', 'Post type singular name', 'kentaurus'),
-        'menu_name'             => _x('Casinos', 'Admin Menu text', 'kentaurus'),
-        'name_admin_bar'        => _x('Casino', 'Add New on Toolbar', 'kentaurus'),
+        'name'                  => _x('Casinos', 'Post type general name', 'hercules'),
+        'singular_name'         => _x('Casino', 'Post type singular name', 'hercules'),
+        'menu_name'             => _x('Casinos', 'Admin Menu text', 'hercules'),
+        'name_admin_bar'        => _x('Casino', 'Add New on Toolbar', 'hercules'),
     );
 
     $args = array(
@@ -31,7 +31,7 @@ function hercules_casinos_init()
         'has_archive'        => false,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'menu_icon'          => 'dashicons-welcome-add-page',
+        'menu_icon'          => 'dashicons-money-alt',
         'supports'           => array('title', 'author', 'thumbnail', 'revisions'),
     );
 
